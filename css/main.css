@@ -17,3 +17,16 @@ button {
 	align: center;
 	background-image: url(/images/happy.png);
 }
+
+table {
+	align-content: center;
+}
+
+.rate {
+	background: transparent;
+	border: none;	
+}
+
+.more {
+	position: center;
+}
