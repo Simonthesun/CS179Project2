@@ -22,6 +22,10 @@ table {
 	align-content: center;
 }
 
+select {
+	color: black;
+}
+
 .rate {
 	background: transparent;
 	border: none;	
