@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Happify</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <nav class="teal accent-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Cover Flow -->
+    <div id="prototype" class="section">
+        <div class="container">
+            <h2 class="header light center-align">How are you feeling?</h2>
+            <p class="light flow-text center-align">
+                Mood:
+            </p>
+            <!-- implement this as a form -->
+            <table align="center">
+                <tr>
+                    <td><button class="rate"><img src="images/happy.png" width="40px" height="40px"></button></td>
+                    <td><button class="rate"><img src="images/neutral.png" width="40px" height="40px"></button></td>
+                    <td><button class="rate"><img src="images/unhappy.png" width="40px" height="40px"></button></td>
+                </tr>
+                
+            </table>
+            <br><button class="more">click to add more detail</button><br>
+            <p class="light flow-text center-align">
+                    Energy:
+                </p>
+            </p>
+            <!-- implement this as a form -->
+            <table align="center">
+                    <tr>
+                        <td><button class="rate"><img src="images/happy.png" width="40px" height="40px"></button></td>
+                        <td><button class="rate"><img src="images/neutral.png" width="40px" height="40px"></button></td>
+                        <td><button class="rate"><img src="images/unhappy.png" width="40px" height="40px"></button></td>
+                    </tr>
+                    
+                </table>
+                <br><button class="more">click to add more detail</button><br>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container white-text center-align">
+            Copyright @ MEalTIME 2018
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js" type='module'></script>
+
+</body>
+
+</html>
