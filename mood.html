@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
@@ -45,35 +45,74 @@
 
     <!-- Cover Flow -->
     <div id="prototype" class="section">
-        <div class="container">
-            <h2 class="header light center-align">How are you feeling?</h2>
+        <div class="container" align="center">
+            <h4 class="header light center-align">How are you feeling?</h4>
             <p class="light flow-text center-align">
                 Mood:
             </p>
             <!-- implement this as a form -->
-            <table align="center">
+            <table>
                 <tr>
-                    <td><button class="rate"><img src="images/happy.png" width="40px" height="40px"></button></td>
-                    <td><button class="rate"><img src="images/neutral.png" width="40px" height="40px"></button></td>
-                    <td><button class="rate"><img src="images/unhappy.png" width="40px" height="40px"></button></td>
+                    <td>
+                        <a href="" id="happybtn" class="btn-floating btn-large waves-effect waves-light">
+                            <i class="large material-icons" style="font-size:40px; color:green; background-color:white">
+                                sentiment_satisfied
+                            </i>
+                        </a>
+    
+                    </td>
+                    <td>
+                        <a href="" id="mehbtn" class="btn-floating btn-large waves-effect waves-light">
+                            <i class="large material-icons" style="font-size:40px; color:gold; background-color:white">
+                                sentiment_neutral
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="" id="sadbtn" class="btn-floating btn-large waves-effect waves-light">
+                            <i class="large material-icons" style="font-size:40px; color:red; background-color:white">
+                                sentiment_dissatisfied
+                            </i>
+                        </a>
+                    </td>
+                    
                 </tr>
                 
             </table>
-            <br><button class="more">click to add more detail</button><br>
+            <br><a href="" id="addbtn" class="btn waves-effect waves-light">Click to add more detail</a><br>
             <p class="light flow-text center-align">
                     Energy:
                 </p>
-            </p>
-            <!-- implement this as a form -->
-            <table align="center">
+                <!-- implement this as a form -->
+                <table>
                     <tr>
-                        <td><button class="rate"><img src="images/happy.png" width="40px" height="40px"></button></td>
-                        <td><button class="rate"><img src="images/neutral.png" width="40px" height="40px"></button></td>
-                        <td><button class="rate"><img src="images/unhappy.png" width="40px" height="40px"></button></td>
+                        <td>
+                            <a href="" id="happybtn" class="btn-floating btn-large waves-effect waves-light">
+                                <i class="large material-icons" style="font-size:40px; color:green; background-color:white">
+                                    sentiment_satisfied
+                                </i>
+                            </a>
+        
+                        </td>
+                        <td>
+                            <a href="" id="mehbtn" class="btn-floating btn-large waves-effect waves-light">
+                                <i class="large material-icons" style="font-size:40px; color:gold; background-color:white">
+                                    sentiment_neutral
+                                </i>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="" id="sadbtn" class="btn-floating btn-large waves-effect waves-light">
+                                <i class="large material-icons" style="font-size:40px; color:red; background-color:white">
+                                    sentiment_dissatisfied
+                                </i>
+                            </a>
+                        </td>
+                        
                     </tr>
                     
                 </table>
-                <br><button class="more">click to add more detail</button><br>
+                <br><a href="" id="addbtn" class="btn waves-effect waves-light">Click to add more detail</a><br>
         </div>
     </div>
     
