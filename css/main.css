@@ -24,7 +24,17 @@ table {
 
 select {
 	color: black;
+	width: 100px;
 }
+
+.rightfloat {
+	float: right;
+}
+
+.centerfloat {
+	float: center;
+}
+
 
 .rate {
 	background: transparent;

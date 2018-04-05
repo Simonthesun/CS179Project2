@@ -4,16 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Happify</title>
-
-    <!-- CSS  -->
-    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    
 
 </head>
 
 <body>
+    <!-- CSS  -->
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
@@ -48,20 +48,22 @@
         <div class="container">
             <h2 class="header light center-align">Log Your Exercise</h2>
             
-            <form action="/action_page.php">
-                Activity:<br>
+                Activity:
                 <input type="text" name="activity" value="">
                 <br>
-                Intensity:<br>
-                <input type="radio" name="Intensity" value="high">
-                <input type="radio" name="Intensity" value="medium">
-                <input type="radio" name="Intensity" value="low">
-                <br><br>
-                <input type="submit" value="Submit">
-                <select>
-                    <option value="hello">Hello</option>
+                Intensity:
+                <select class="browser-default">
+                    <option value="high">High</option>
+                    <option value="med">Medium</option>
+                    <option value="low">Low</option>
                 </select>
-            </form> 
+                <br>
+                Time (mins):
+                <select class="browser-default">
+                        <option value="high">5</option>
+                        <option value="med">10</option>
+                </select><br><br>
+                <button style="float:center;">Add Exercise!</button> 
             
                 
 
