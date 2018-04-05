@@ -15,13 +15,15 @@
 
 .tasks {
 	position:fixed;
-	bottom: 100px;
-	left: 20%
+	bottom:2%;
+	left: 30%
 }
 
+.carousel {
+	height: 10%;
+}
 button {
 	align: center;
-	background-image: url(/images/happy.png);
 }
 
 table {
@@ -33,13 +35,6 @@ select {
 	width: 100px;
 }
 
-.rightfloat {
-	float: right;
-}
-
-.centerfloat {
-	float: center;
-}
 
 
 .rate {
