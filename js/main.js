@@ -1,17 +1,19 @@
 // initialize side-navigation bar
 
-var elem = document.querySelector('.sidenav');
-var instance = M.Sidenav.init(elem);
+var elem_sn = document.querySelector('.sidenav');
+var instance_sn = M.Sidenav.init(elem_sn);
 
 
 
-var elem = document.querySelector('.collapsible');
-var instance = M.Collapsible.init(elem);
-
-
-
-var elem = document.querySelector('.carousel');
-var instance = M.Carousel.init(elem, {
+var elem_c = document.querySelector('.carousel');
+var instance_c = M.Carousel.init(elem_c, {
     fullWidth: true,
     indicators: true
 });
+
+
+var elem = document.querySelector('.datepicker');
+var instance = M.Datepicker.init(elem);
+
+
+// var todd = document.querySelector("#today").valueAsDate = new Date();
