@@ -14,27 +14,16 @@
 </head>
 
 <body>
-    <!-- Navigation Bar-->
-
-    <!-- TODO 1: Apply a different background color to the navigation bar 
-			Hint: http://next.materializecss.com/color.html
-	-->
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">Happify</a>
+            <a href="#" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
                 <li>
                     <a href="welcome.html">Welcome</a>
                 </li>
                 <li>
-                    <a href="#process">Design Process</a>
-                </li>
-                <li>
-                    <a href="#prototype">Prototype</a>
-                </li>
-                <li>
-                    <a href="#team">Team</a>
+                    <a href="dayview.html">Day View</a>
                 </li>
             </ul>
             <!-- This slide menu will only appear on a mobile screen -->
@@ -47,29 +36,20 @@
                     <a href="welcome.html">Welcome</a>
                 </li>
                 <li>
-                    <a href="#process">Design Process</a>
-                </li>
-                <li>
-                    <a href="#prototype">Prototype</a>
-                </li>
-                <li>
-                    <a href="#team">Team</a>
+                    <a href="dayview.html">Day View</a>
                 </li>
             </ul>
 
         </div>
     </nav>
 
-    <!-- Prototype -->
+    <!-- Cover Flow -->
     <div id="prototype" class="section">
         <div class="container">
             <h2 class="header light">Welcome Back!</h2>
             <p class="light flow-text">
                 Here's how you're doing:
             </p>
-            <!-- TODO 4: Add a carousel component below. 
-                    Hint: Find a carousel component on your own: http://next.materializecss.com/
-            -->
             
             <div><input type="text" placeholder= "today" class="datepicker">
             </div>
@@ -95,19 +75,40 @@
                   <p class="white-text">This is your fourth panel</p>
                 </div>
             </div>
-
         </div>
     </div>
 
+    <div id="continue" class="container">
+        <div class="row">
+
+            <div class="col s3">
+                <a href="" id="foodbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">local_dining</i></a>
+                <label for="foodbtn">Meals</label>
+            </div>
+
+            <div class="col s3">
+                <a href="" id="moodbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">mood</i></a>
+                <label for="moodbtn">Mood</label>
+            </div>
+
+            <div class="col s3">
+                <a href="" id="glucbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">trending_up</i></a>
+                <label for="glucbtn">Glucose</label>
+            </div>
+
+            <div class="col s3">
+                <a href="" id="exbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">favorite</i></a>                <label for="exbtn">Exercise</label>
+            </div>
+
+        </div>
+    </div>
     
     <div class="section teal accent-4">
         <div class="container white-text center-align">
-            Copyright @ Happify 2017
+            Copyright @ MEalTIME 2018
         </div>
     </div>
 
-
-    <!--  Scripts-->
     <script src="js/materialize.min.js"></script>
     <script src="js/main.js" type='module'></script>
 
