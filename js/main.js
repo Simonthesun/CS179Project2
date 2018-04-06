@@ -16,6 +16,13 @@ var instance = M.Carousel.init(elem, {
 var elem = document.querySelector('.datepicker');
 var instance = M.Datepicker.init(elem);
 
+
+var el = document.querySelector('.tabs');
+
+var instance = M.Tabs.init(el, {
+    swipeable: true
+});
+
 // var elemSelectMeal = document.querySelector('select');
 // var instanceSelectMeal = M.FormSelect.init(elemSelectMeal, options);
 
