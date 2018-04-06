@@ -6,6 +6,7 @@ var instance_sn = M.Sidenav.init(elem_sn);
 
 
 var elem_c = document.querySelector('.carousel');
+
 var instance_c = M.Carousel.init(elem_c, {
     fullWidth: true,
     indicators: true
