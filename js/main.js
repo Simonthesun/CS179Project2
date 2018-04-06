@@ -17,3 +17,6 @@ var instance = M.Datepicker.init(elem);
 
 
 // var todd = document.querySelector("#today").valueAsDate = new Date();
+
+
+var instance_t = M.Tabs.init(el);
