@@ -17,10 +17,10 @@ var elem = document.querySelector('.datepicker');
 var instance = M.Datepicker.init(elem);
 
 var elemSelectMeal = document.querySelector('select');
-var instanceSelectMeal = M.FormSelect.init(elemSelectMeal, options);
+var instanceSelectMeal = M.FormSelect.init(elemSelectMeal);
 
 
 // var todd = document.querySelector("#today").valueAsDate = new Date();
 
-
-var instance_t = M.Tabs.init(el);
+var elemAC = document.querySelector('.autocomplete');
+var instance = M.Autocomplete.init(elemAC);
