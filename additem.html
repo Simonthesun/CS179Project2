@@ -13,20 +13,23 @@
 
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
             <a href="#" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
                 <li>
-                    <a href="welcome.html">Welcome</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="dayview.html">Day View</a>
                 </li>
                 <li>
                     <a href="meal.html">Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="mood.html">Log Mood</a>
                 </li>
                 <li>
                     <a href="exercise.html">Log Exercise</a>
@@ -39,16 +42,19 @@
             <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
             <ul id="slide-out" class="sidenav">
                 <li>
-                    <a href="welcome.html">Welcome</a>
+                    <a href="index.html"><i class="large material-icons">home</i>Home</a>
                 </li>
                 <li>
-                    <a href="dayview.html">Day View</a>
+                    <a href="dayview.html"><i class="large material-icons">trending_up</i>Day View</a>
                 </li>
                 <li>
-                    <a href="meal.html">Plan a Meal</a>
+                    <a href="meal.html"><i class="large material-icons">local_dining</i>Plan a Meal</a>
                 </li>
                 <li>
-                    <a href="exercise.html">Log Exercise</a>
+                    <a href="mood.html"><i class="large material-icons">mood</i>Log Mood</a>
+                </li>
+                <li>
+                    <a href="exercise.html"><i class="large material-icons">favorite</i>Log Exercise</a>
                 </li>
             </ul>
 
@@ -59,7 +65,7 @@
         <div class="container">
             <a class="waves-effect waves-light btn-small" href="meal.html"><i class="material-icons left">chevron_left</i>Back</a>
 
-            <h2 class="header light">Add Item</h2>
+            <h5 class="header light">Add Item</h5>
 
             <div class="row">
               <div class="col s12">
@@ -77,14 +83,18 @@
                 <div class="col s12">
                   <ul class="tabs">
                     <li class="tab col s3"><a href="#test1">Cups</a></li>
-                    <li class="tab col s3"><a href="#test2">Weight</a></li>
+                    <li class="tab col s3 active"><a href="#test2">Weight</a></li>
                     <li class="tab col s3"><a href="#test3">Servings</a></li>
                     <li class="tab col s3"><a href="#test4">Other</a></li>
                   </ul>
                 </div>
 
                 <div id="test1" class="col s12">
+                    <div class="input-field inline">
+                        <input placeholder="0" id="cups" type="text" class="validate">
+                    </div>
 
+                    Cups
                 </div>
 
                 <div id="test2" class="col s12">
@@ -98,8 +108,19 @@
                     </select>
 
                 </div>
-                <div id="test3" class="col s12">Test 3</div>
-                <div id="test4" class="col s12">Test 4</div>
+                <div id="test3" class="col s12">
+                    <div class="input-field inline">
+                        <input placeholder="0" id="cups" type="text" class="validate">
+                    </div>
+
+                    Servings
+                </div>
+
+                <div id="test4" class="col s12">
+                    <div class="input-field inline">
+                        <input placeholder="0" id="cups" type="text" class="validate">
+                    </div>
+                </div>
               </div>
 
             <ul class="collection with-header">
@@ -109,6 +130,11 @@
                 <li class="collection-item">Protein 31g</li>
                 <li class="collection-item">Calories    270</li>
             </ul>
+
+            <div>
+                <a class="btn-floating btn-large waves-effect waves-light" href="meal.html"><i class="material-icons">add</i></a>
+                Add
+            </div>
             
         </div>
     </div>
@@ -119,7 +145,7 @@
         </div>
     </div>
 
-    <script src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="js/main.js" type='module'></script>
 
 </body>
