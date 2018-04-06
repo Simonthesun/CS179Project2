@@ -24,3 +24,10 @@ var instance = M.Datepicker.init(elem);
 
 // var instance_t = M.Tabs.init(el);
 
+var camButton = document.getElementById('camButton');
+var div = document.getElementById('foodInfo');
+
+camButton.onclick = function() {
+    div.className = "center-align scale-transition scale-in";
+    
+};
