@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>MEalTIME</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <nav class="teal accent-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Cover Flow -->
+    <div id="prototype" class="section">
+        <div class="container">
+          <h2 class="header light">Plan a Meal</h2>
+
+              Select Meal Type:
+                <select class="browser-default">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+
+
+                <table>
+                  <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Portion</th>
+                        <th>Estimated Carbs</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Roast chicken</td>
+                      <td>10 oz</td>
+                      <td>0 g</td>
+                    </tr>
+                    <tr>
+                      <td>Food items</td>
+                      <td>Will appear</td>
+                      <td>Here</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br>
+
+                <div id="addItem">
+                  Add Item
+
+                  <a class="btn-floating btn waves-effect waves-light"><i class="material-icons">camera_alt</i></a>
+                  <a class="btn-floating btn waves-effect waves-light"><i class="material-icons">add</i></a>
+
+                </div>
+
+                <br>
+                <br>
+
+                <div id="insulin">
+                  <div class="input-field inline">
+                    <input placeholder="0" id="dosage" type="text" class="validate">
+                    Units
+                  </div>
+
+                  <a class="waves-effect waves-light btn">Enter Insulin Dose</a>
+                </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container white-text center-align">
+            Copyright @ The Big Three 2018
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js" type='module'></script>
+
+</body>
+
+</html>
