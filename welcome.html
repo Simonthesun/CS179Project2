@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
@@ -52,18 +52,15 @@
     <!-- Cover Flow -->
     <div id="prototype" class="section">
         <div class="container">
-            <h2 class="header light">Welcome Back!</h2>
-            <p class="light flow-text">
+            <h3 class="header light">Welcome Back!</h3>
+            <p class="light flow-text" style="text-align:center">
                 Here's how you're doing:
             </p>
             
-            <div><input type="text" placeholder= "today" class="datepicker">
+            <div><input type="text" placeholder= "Pick a day" class="datepicker">
             </div>
 
-            <div class="carousel carousel-slider center">
-                <div class="carousel-fixed-item center">
-                  <a class="btn waves-effect white grey-text darken-text-2">button</a>
-                </div>
+            <div class="carousel">
                 <div class="carousel-item red white-text" href="#one!">
                   <h2>First Panel</h2>
                   <p class="white-text">This is your first panel</p>
@@ -84,28 +81,29 @@
         </div>
     </div>
 
-    <div id="continue" class="container">
+    <div class="tasks">
         <div class="row">
-
-            <div class="col s3">
+            <div class="col s6">
                 <a href="" id="foodbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">local_dining</i></a>
-                <label for="foodbtn">Meals</label>
+                <br><label for="foodbtn">Meals</label>
             </div>
 
-            <div class="col s3">
+            <div class="col s6">
                 <a href="" id="moodbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">mood</i></a>
-                <label for="moodbtn">Mood</label>
+                <br><label for="moodbtn">Mood</label>
             </div>
+        </div>
 
-            <div class="col s3">
+        <div class="row">
+            <div class="col s6">
                 <a href="" id="glucbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">trending_up</i></a>
-                <label for="glucbtn">Glucose</label>
+                <br><label for="glucbtn">Glucose</label>
             </div>
-
-            <div class="col s3">
-                <a href="" id="exbtn"class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">favorite</i></a>                <label for="exbtn">Exercise</label>
+        
+            <div class="col s6">
+                <a href="" id="exbtn" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">favorite</i></a>
+                <br><label for="exbtn">Exercise</label>
             </div>
-
         </div>
     </div>
     

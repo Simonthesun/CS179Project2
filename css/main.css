@@ -13,14 +13,29 @@
 	background-color: teal;
 }
 
+.tasks {
+	position:fixed;
+	bottom:2%;
+	left: 30%
+}
+
+.carousel {
+	height: 10%;
+}
 button {
 	align: center;
-	background-image: url(/images/happy.png);
 }
 
 table {
 	align-content: center;
 }
+
+select {
+	color: black;
+	width: 100px;
+}
+
+
 
 .rate {
 	background: transparent;

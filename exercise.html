@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    
+
+</head>
+
+<body scroll="no" style="overflow: hidden">
+    <!-- CSS  -->
+
+    <nav class="teal accent-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="welcome.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Cover Flow -->
+    <div id="prototype" class="section">
+        <div class="container">
+            <h2 class="header light center-align">Log Your Exercise</h2>
+            
+                Activity:
+                <input type="text" name="activity" value="">
+                <br>
+                Intensity:
+                <select class="browser-default">
+                    <option value="high">High</option>
+                    <option value="med">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <br>
+                Time (mins):
+                <select class="browser-default">
+                    <!-- use a script for this -->
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+
+                </select><br><br>
+                
+                <a href="" id="addbtn" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">add</i></a>
+                <br><label for="addbtn">Add Exercise</label>
+            
+                
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container white-text center-align">
+            Copyright @ MEalTIME 2018
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js" type='module'></script>
+
+</body>
+
+</html>
