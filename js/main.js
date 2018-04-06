@@ -5,24 +5,22 @@ var instance_sn = M.Sidenav.init(elem_sn);
 
 
 
-var elem = document.querySelector('.carousel');
+var elem_c = document.querySelector('.carousel');
 
-var instance = M.Carousel.init(elem, {
+var instance_c = M.Carousel.init(elem_c, {
     fullWidth: true,
     indicators: true
   });
 
 
-var elem = document.querySelector('.datepicker');
-var instance = M.Datepicker.init(elem);
+var elem_d = document.querySelector('.datepicker');
+var instance_d = M.Datepicker.init(elem_d);
 
-// var elemSelectMeal = document.querySelector('select');
-// var instanceSelectMeal = M.FormSelect.init(elemSelectMeal);
+var elem = document.querySelector('.tabs');
+// var instance = M.Tabs.init(elem, {
+//     swipeable: true
+// });
 
-
-// var todd = document.querySelector("#today").valueAsDate = new Date();
-
-// var instance_t = M.Tabs.init(el);
 
 var camButton = document.getElementById('camButton');
 var div = document.getElementById('foodInfo');
@@ -31,3 +29,6 @@ camButton.onclick = function() {
     div.className = "center-align scale-transition scale-in";
     
 };
+
+var instance = M.Tabs.init(elem);
+
