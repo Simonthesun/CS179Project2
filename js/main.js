@@ -15,5 +15,8 @@ var instance_c = M.Carousel.init(elem_c, {
 var elem = document.querySelector('.datepicker');
 var instance = M.Datepicker.init(elem);
 
+var elemSelectMeal = document.querySelector('select');
+var instanceSelectMeal = M.FormSelect.init(elemSelectMeal, options);
+
 
 // var todd = document.querySelector("#today").valueAsDate = new Date();
