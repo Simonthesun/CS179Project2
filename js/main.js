@@ -5,22 +5,31 @@ var instance_sn = M.Sidenav.init(elem_sn);
 
 
 
-var elem_c = document.querySelector('.carousel');
+var elem = document.querySelector('.carousel');
 
-var instance_c = M.Carousel.init(elem_c, {
+var instance = M.Carousel.init(elem, {
     fullWidth: true,
     indicators: true
-});
+  });
 
 
 var elem = document.querySelector('.datepicker');
 var instance = M.Datepicker.init(elem);
 
-var elemSelectMeal = document.querySelector('select');
-var instanceSelectMeal = M.FormSelect.init(elemSelectMeal);
+<<<<<<< HEAD
+// var elemSelectMeal = document.querySelector('select');
+// var instanceSelectMeal = M.FormSelect.init(elemSelectMeal);
+=======
+// var elemSelectMeal = document.querySelector('select');
+// var instanceSelectMeal = M.FormSelect.init(elemSelectMeal, options);
+>>>>>>> c3195265d03210100c7295ce03acc8213d4c89c3
 
 
 // var todd = document.querySelector("#today").valueAsDate = new Date();
 
-var elemAC = document.querySelector('.autocomplete');
-var instance = M.Autocomplete.init(elemAC);
+<<<<<<< HEAD
+
+=======
+
+// var instance_t = M.Tabs.init(el);
+>>>>>>> c3195265d03210100c7295ce03acc8213d4c89c3
