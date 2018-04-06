@@ -20,7 +20,7 @@
             <a href="#" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
                 <li>
-                    <a href="index.html">Welcome</a>
+                    <a href="welcome.html">Welcome</a>
                 </li>
                 <li>
                     <a href="dayview.html">Day View</a>
@@ -39,7 +39,7 @@
             <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
             <ul id="slide-out" class="sidenav">
                 <li>
-                    <a href="index.html">Welcome</a>
+                    <a href="welcome.html">Welcome</a>
                 </li>
                 <li>
                     <a href="dayview.html">Day View</a>
@@ -57,50 +57,62 @@
 
     <div id="prototype" class="section">
         <div class="container">
+            <a class="waves-effect waves-light btn-small" href="meal.html"><i class="material-icons left">chevron_left</i>Back</a>
 
-            <ul class="pagination" style="text-align:center">
-                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="dayview.html">1</a></li>
-                    <li class="waves-effect"><a href="dayview2.html">2</a></li>
-                    <li class="waves-effect"><a href="dayview2.html"><i class="material-icons">chevron_right</i></a></li>
+            <h2 class="header light">Add Item</h2>
+
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" id="autocomplete-input" class="autocomplete">
+                    <label for="autocomplete-input">Search...</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s3"><a href="#test1">Cups</a></li>
+                    <li class="tab col s3"><a href="#test2">Weight</a></li>
+                    <li class="tab col s3"><a href="#test3">Servings</a></li>
+                    <li class="tab col s3"><a href="#test4">Other</a></li>
+                  </ul>
+                </div>
+
+                <div id="test1" class="col s12">
+
+                </div>
+
+                <div id="test2" class="col s12">
+                    <div class="input-field inline">
+                        <input placeholder="0" id="cups" type="text" class="validate">
+                    </div>
+
+                    <select class="browser-default">
+                        <option value="ounces">oz.</option>
+                        <option value="pounds">lb.</option>
+                    </select>
+
+                </div>
+                <div id="test3" class="col s12">Test 3</div>
+                <div id="test4" class="col s12">Test 4</div>
+              </div>
+
+            <ul class="collection with-header">
+                <li class="collection-header"><h6>Nutritional info</h6></li>
+                <li class="collection-item">Fat     15g</li>
+                <li class="collection-item">Carbs   0g</li>
+                <li class="collection-item">Protein 31g</li>
+                <li class="collection-item">Calories    270</li>
             </ul>
-
-            <h5 class="header light">Glucose and Mood</h5>
-
-            <div class="row">
-                    <div class="col s12 m5">
-                      <div class="card-panel teal">
-                        <span class="white-text">
-                            Placeholder for graph.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        
-            <p class="light flow-text" style="text-align:left">
-                    Your glucose levels look a little higher than normal today. Try eating lower carb foods at your next meal. Keep an eye on levels until they go back to normal
-            </p>
-
-            <h5 class="header light">Insulin History</h5>
-
-            <div class="row">
-                    <div class="col s12 m5">
-                      <div class="card-panel teal">
-                        <span class="white-text">
-                            Placeholder for graph.
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <p class="light flow-text" style="text-align:left">
-                    A summary of your insulin doses over the last week.
-            </p>
-
+            
         </div>
-
     </div>
-
+    
     <div class="footer">
         <div class="container white-text center-align">
             Copyright @ The Big Three 2018
