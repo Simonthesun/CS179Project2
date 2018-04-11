@@ -68,17 +68,17 @@
             <h2 class="header light center-align">Log Your Exercise</h2>
             
                 Activity:
-                <input type="text" name="activity" value="">
+                <input type="text" name="activity" value="" id="activity">
                 <br>
                 Intensity:
-                <select class="browser-default">
+                <select class="browser-default" id="intensity">
                     <option value="high">High</option>
                     <option value="med">Medium</option>
                     <option value="low">Low</option>
                 </select>
                 <br>
                 Time (mins):
-                <select class="browser-default">
+                <select class="browser-default" id="time">
                     <!-- use a script for this -->
                         <option value="5">5</option>
                         <option value="10">10</option>
@@ -92,7 +92,7 @@
 
                 </select><br><br>
                 
-                <a href="" id="addbtn" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">add</i></a>
+                <button id="addbtn" type="submit" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons" onclick="saveExercise()">add</i></button>
                 <br><label for="addbtn">Add Exercise</label>
             
                 
@@ -105,8 +105,9 @@
         </div>
     </div> -->
 
-    <script src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="js/main.js" type='module'></script>
+    <script src="js/exercise.js" type="text/javascript"></script>
 
 </body>
 
