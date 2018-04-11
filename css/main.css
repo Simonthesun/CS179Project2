@@ -3,6 +3,19 @@
 	max-height: 800px;
 }
 
+.camera {
+	height: 80vh;
+	max-height: 100vh;
+}
+
+#foodInfo {
+	bottom: 20%;
+	left: 15%;
+	position: absolute;
+	align-content: center;
+	align-self: center;
+	background-color: teal;
+}
 
 .footer {
 	position:fixed;
@@ -20,7 +33,7 @@
 }
 
 .carousel {
-	
+	height: 20vh;
 }
 button {
 	align: center;
@@ -34,7 +47,6 @@ select {
 	color: black;
 	width: 100px;
 }
-
 
 
 .rate {

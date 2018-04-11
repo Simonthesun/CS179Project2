@@ -1,13 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Happify</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
 <body>
 
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
-  
+    <nav class="teal accent-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="index.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="exercise.html">Log Exercise</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="index.html">Welcome</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="exercise.html">Log Exercise</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="prototype" class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                    <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                  </ul>
+                </div>
+                <div id="test1" class="col s12">Test 1</div>
+                <div id="test2" class="col s12">Test 2</div>
+                <div id="test3" class="col s12">Test 3</div>
+                <div id="test4" class="col s12">Test 4</div>
+              </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container white-text center-align">
+            Copyright @ The Big Three 2018
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="js/materialize.min.js"></script> -->
+    <script src="js/main.js" type='module'></script>
+
 </body>
+
 </html>

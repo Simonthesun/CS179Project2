@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>MEalTIME</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <nav class="teal accent-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="mood.html">Log Mood</a>
+                </li>
+                <li>
+                    <a href="exercise.html">Log Exercise</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="index.html"><i class="large material-icons">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="dayview.html"><i class="large material-icons">trending_up</i>Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html"><i class="large material-icons">local_dining</i>Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="mood.html"><i class="large material-icons">mood</i>Log Mood</a>
+                </li>
+                <li>
+                    <a href="exercise.html"><i class="large material-icons">favorite</i>Log Exercise</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="prototype" class="section">
+        <div class="container">
+
+            <ul class="pagination" style="text-align:center">
+                    <li class="waves-effect"><a href="dayview.html"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="dayview.html">1</a></li>
+                    <li class="active"><a href="dayview2.html">2</a></li>
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">That day, you ate: </span>
+                            <ul class="collection black-text">
+                            <li class="collection-item">Chicken</li>
+                            <li class="collection-item">Salmon</li>
+                            <li class="collection-item">Sushi</li>
+                            <li class="collection-item">Chicken</li>
+                            </ul>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="meal.html" class="waves-effect waves-light btn">Add Meal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">Here was your schedule: </span>
+                                    <form action="#">
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in" checked="checked" />
+                                                <span>10:00AM: Lunch</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in" checked="checked" />
+                                                <span>12:00PM - 1:00 PM: Ec10</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in" checked="checked" />
+                                                <span>2:30PM - 4:00 PM: CS179</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span>4:00 PM: Workout</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span>6:00 PM: Dinner</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span>10:00 PM: CS179 Homework 10</span>
+                                            </label>
+                                        </p>
+                                </form>
+                            </div>
+                            <div class="card-action" style="text-align:center">
+                                <a href="#!">Add Event</a>
+                                <a href="#!">Sync from </a>
+                                <a href="#!" id="goog" class="btn-floating disabled"><i class="large material-icons">android</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container white-text center-align">
+            Copyright @ The Big Three 2018
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js" type='module'></script>
+
+</body>
+
+</html>

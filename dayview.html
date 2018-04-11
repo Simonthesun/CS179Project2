@@ -5,16 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>MEalTIME</title>
-    
-    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/materialize.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <!-- CSS  -->
 
     <nav class="teal accent-4" role="navigation">
         <div class="nav-wrapper container">
@@ -62,48 +61,57 @@
         </div>
     </nav>
 
-    <!-- Cover Flow -->
     <div id="prototype" class="section">
         <div class="container">
-            <h2 class="header light center-align">Log Your Exercise</h2>
-            
-                Activity:
-                <input type="text" name="activity" value="">
-                <br>
-                Intensity:
-                <select class="browser-default">
-                    <option value="high">High</option>
-                    <option value="med">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-                <br>
-                Time (mins):
-                <select class="browser-default">
-                    <!-- use a script for this -->
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                        <option value="35">35</option>
-                        <option value="40">40</option>
-                        <option value="45">45</option>
 
-                </select><br><br>
-                
-                <a href="" id="addbtn" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons">add</i></a>
-                <br><label for="addbtn">Add Exercise</label>
-            
-                
+            <ul class="pagination" style="text-align:center">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="dayview.html">1</a></li>
+                    <li class="waves-effect"><a href="dayview2.html">2</a></li>
+                    <li class="waves-effect"><a href="dayview2.html"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+
+            <h5 class="header light">Glucose and Mood</h5>
+
+            <div class="row">
+                    <div class="col s12 m5">
+                      <div class="card-panel teal">
+                        <span class="white-text">
+                            Placeholder for graph.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+            <p class="light flow-text" style="text-align:left">
+                    Your glucose levels look a little higher than normal today. Try eating lower carb foods at your next meal. Keep an eye on levels until they go back to normal
+            </p>
+
+            <h5 class="header light">Insulin History</h5>
+
+            <div class="row">
+                    <div class="col s12 m5">
+                      <div class="card-panel teal">
+                        <span class="white-text">
+                            Placeholder for graph.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="light flow-text" style="text-align:left">
+                    A summary of your insulin doses over the last week.
+            </p>
 
         </div>
+
     </div>
-    <!-- <div class="footer">
+
+    <div class="footer">
         <div class="container white-text center-align">
             Copyright @ The Big Three 2018
         </div>
-    </div> -->
+    </div>
 
     <script src="js/materialize.min.js"></script>
     <script src="js/main.js" type='module'></script>
