@@ -33,7 +33,7 @@ function addMeal()
 	console.log(foods);
     newMeal.id = ''.concat('meal', parseInt(n));
     n++;
-    newMeal.category = cat;
+    newMeal.category = document.getElementById("mealtype");
     newMeal.food = foods;
     newMeal.carbs = calcCarbs(foods);
     
