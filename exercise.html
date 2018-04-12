@@ -70,6 +70,11 @@
                 Activity:
                 <input type="text" name="activity" value="" id="activity">
                 <br>
+
+                Start Time:
+                <input id="time" type="time" id="time">
+                <br>
+
                 Intensity:
                 <select class="browser-default" id="intensity">
                     <option value="high">High</option>
@@ -77,8 +82,8 @@
                     <option value="low">Low</option>
                 </select>
                 <br>
-                Time (mins):
-                <select class="browser-default" id="time">
+                Duration (mins):
+                <select class="browser-default" id="duration">
                     <!-- use a script for this -->
                         <option value="5">5</option>
                         <option value="10">10</option>
@@ -92,7 +97,7 @@
 
                 </select><br><br>
                 
-                <button id="addbtn" type="submit" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons" onclick="saveExercise()">add</i></button>
+                <button id="addbtn" type="submit" class="btn-floating btn-large waves-effect waves-light"><i class="large material-icons" onclick="location.href='index.html'; saveExercise()">add</i></button>
                 <br><label for="addbtn">Add Exercise</label>
             
                 
