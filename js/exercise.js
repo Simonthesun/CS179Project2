@@ -41,4 +41,15 @@ function loadExercises() {
 document.addEventListener('DOMContentLoaded', function() {
     loadExercises();
 
+    var fileName = location.href.split("/").slice(-1)[0]; 
+    if (fileName.valueOf() == new String("dayview2.html").valueOf()) {
+    	var list = document.getElementById("exerciseList");
+
+    	for (var key in exercises) {
+    		var entry = document.createElement('li');
+			entry.appendChild(document.createTextNode(exercises[key].name + " (" + exercises[key].intensity + ")"));
+			list.appendChild(entry);
+    	}
+    }
+
 }, false);
