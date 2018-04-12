@@ -61,8 +61,9 @@ function initialize() {
     }
 	let curmeal = JSON.parse(localStorage.getItem("meals"));
 	let l = curmeal.length;
+	console.log(l);
 	console.log(curmeal[l-1]);
-    renderMeal(curmeal);
+    renderMeal(curmeal[l-1].food);
 }
 
 initialize();
