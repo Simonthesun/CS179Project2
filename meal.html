@@ -66,7 +66,7 @@
           <h2 class="header light">Plan a Meal</h2>
 
               Select Meal Type:
-                <select class="browser-default">
+                <select id="mealtype" class="browser-default">
                     <option value="breakfast">Breakfast</option>
                     <option value="lunch">Lunch</option>
                     <option value="dinner">Dinner</option>
@@ -74,7 +74,7 @@
                 </select>
 
 
-                <table>
+                <table id="mealtable">
                   <thead>
                     <tr>
                         <th>Food</th>
@@ -83,17 +83,9 @@
                     </tr>
                   </thead>
 
-                  <tbody>
-                    <tr>
-                      <td>Roast chicken</td>
-                      <td>10 oz</td>
-                      <td>0 g</td>
-                    </tr>
-                    <tr>
-                      <td>Food items</td>
-                      <td>Will appear</td>
-                      <td>Here</td>
-                    </tr>
+                  <tbody id="meals">
+                    
+                   
                   </tbody>
                 </table>
 
@@ -102,9 +94,15 @@
                 <div id="addItem">
                   Add Item
 
-                  <a class="btn-floating btn waves-effect waves-light" href="camera.html"><i class="material-icons">add_a_photo</i></a>
-                  <a class="btn-floating btn waves-effect waves-light" href="additem.html"><i class="material-icons">add</i></a>
+                  <a class="btn-floating btn waves-effect waves-light" href="camera.html">
+                      <i class="material-icons">add_a_photo</i></a>
+                  <a class="btn-floating btn waves-effect waves-light" href="additem.html"  onclick="initializeMeal()">
+                      <i class="material-icons">add</i></a>
 
+                </div>
+                <br>
+                <div id="addMeal">
+                    <a class="waves-effect waves-light btn" onclick="addMeal()">Finish Meal</a>
                 </div>
 
                 <br>
@@ -130,6 +128,7 @@
 
     <script src="js/materialize.min.js"></script>
     <script src="js/main.js" type='module'></script>
+    <script src="js/meal.js" type="text/javascript"></script>
 
 </body>
 
