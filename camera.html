@@ -61,26 +61,43 @@
         </div>
     </nav>
 
-    <!-- Cover Flow -->
     <div id="prototype" class="camera">
-        <img src="images/hotdog.jpg" style="max-height: 100vh; max-width: 100vw;">
+        <img id = "hotdog" src="images/hotdog.gif" style="max-height: 100vh; max-width: 100vw;">
     </div>
 
+
+
     <div class="center-align scale-transition scale-out" id="foodInfo">
-        <h6>You scanned: HOT DOG</h6>
-        <ul class="collection with-header">
-            <li class="collection-header"><h6>Nutritional info</h6></li>
-            <li class="collection-item" style="font-weight: bold;">Carbs   0g</li>
-            <li class="collection-item">Fat     15g</li>
-            <li class="collection-item">Protein 31g</li>
-            <li class="collection-item">Calories    270</li>
-        </ul>
-        <br>
-        <a class="waves-effect waves-light btn" href="meal.html">I'm eating this!</a>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">You scanned: HOT DOG</span>
+                            <ul class="collection black-text">
+                                <li class="collection-item" style="font-weight: bold;">Nutritional info</li>
+                                <li class="collection-item">Carbs   0g</li>
+                                <li class="collection-item">Fat     15g</li>
+                                <li class="collection-item">Protein 31g</li>
+                                <li class="collection-item">Calories    270</li>
+                            </ul>
+                        </div>
+                        <div class="card-action" style="text-align:center">
+                            <a href="meal.html" class="waves-effect waves-light btn">I'm eating this!</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="center-align">
-        <button class="btn-floating btn-large waves-effect waves-light red" id="camButton"><i class="material-icons">camera_alt</i></button>
+        <button class="btn-floating btn-large waves-effect waves-light blue" id="camButton"><i class="material-icons">camera_alt</i></button>
+    </div>
+
+    <div class="center-align">
+        <p></p>
+        <button class="btn-floating disabled" id="outButton"><i class="material-icons">clear</i></button>
     </div>
     
     <div class="section teal accent-4">
