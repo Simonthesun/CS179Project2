@@ -1,15 +1,6 @@
 var meals = [];
 var n = 0;
 
-function initializeMeal()
-{
-	if ((localStorage.getItem("curMeal") === "") || (localStorage.getItem("curMeal") === null)) {
-		console.log("adding new empty meal");
-		var meal = [];
-		localStorage.setItem("curMeal", JSON.stringify(meal));
-	}
-
-}
 
 
 function loadMeals() {
@@ -25,24 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 }, false);
 
-// Add all the items in a list of items to a 'meal' object in local storage
-function addMeal()
-{
-	let newMeal = {};
-	var foods = JSON.parse(localStorage.curMeal);
-	console.log(foods);
-    newMeal.id = ''.concat('meal', parseInt(n));
-    n++;
-    newMeal.category = document.getElementById("mealtype");
-    newMeal.food = foods;
-    newMeal.carbs = calcCarbs(foods);
-    
-    meals.push(newMeal);
-    // console.log(stickys);
-    localStorage.setItem('meals', JSON.stringify(meals));
-	// render(stickys);
-	localStorage.setItem('curMeal', "");
-}
 
 // calculate the total carbs for a list of foods
 
@@ -61,7 +34,6 @@ function renderMeal(meal)
 {
     // get the stickys element
    let mealsElm = document.querySelector(".meals");
-   console.log(mealsElm);
    // render the meal from a list of foods
    mealsElm.innerHTML = meal.map(p => renderItem(p)).join('');
 
@@ -87,8 +59,11 @@ function initialize() {
     {
         meals = JSON.parse(initState);
     }
-	let curmeal = JSON.parse(localStorage.getItem("curMeal"));
-    renderMeal(curmeal);
+	let curmeal = JSON.parse(localStorage.getItem("meals"));
+	let l = curmeal.length;
+	console.log(l);
+	console.log(curmeal[l-1]);
+    renderMeal(curmeal[l-1].food);
 }
 
 initialize();
