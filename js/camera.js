@@ -30,18 +30,18 @@ outButton.onclick = function() {
 
 };
 
-submitbutton.onclick = function() {
+// submitbutton.onclick = function() {
 
-    var item = {}
-	console.log(document.getElementById("servingsize").value);
-	var curmeal = JSON.parse(localStorage.getItem("curMeal"));
-	item.name = "Hot Dog";
-	item.servingType = 1;
-	item.servingSize = 1;
-	item.carbCount = 10;
-	curmeal.push(item);
-	console.log("item is:", item);
-	console.log("meal is:", curmeal);
-	localStorage.setItem("curMeal", JSON.stringify(curmeal));
+//     var item = {}
+// 	console.log(document.getElementById("servingsize").value);
+// 	var curmeal = JSON.parse(localStorage.getItem("curMeal"));
+// 	item.name = "Hot Dog";
+// 	item.servingType = 1;
+// 	item.servingSize = 1;
+// 	item.carbCount = 10;
+// 	curmeal.push(item);
+// 	console.log("item is:", item);
+// 	console.log("meal is:", curmeal);
+// 	localStorage.setItem("curMeal", JSON.stringify(curmeal));
     
-}
+// }
