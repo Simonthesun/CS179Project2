@@ -41,102 +41,110 @@ for (var dose in dosages) {
 	timestamps.push(dosages[dose].date);
 }
 
-console.log(doseList);
+var fileName = location.href.split("/").slice(-1)[0]; 
 
 Chart.defaults.global.legend.display = false;
 
-var ctx = document.getElementById("insulinChart").getContext("2d");
+if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf() == new String("dayview.html").valueOf()) {
+  var ctx = document.getElementById("insulinChart").getContext("2d");
 
-var myLineChart = new Chart(ctx, {
-    type: 'line',
-  data: {
-    labels: timestamps,
-    datasets: [{
-      label: 'Insulin Dosage',
-      data: doseList,
-      backgroundColor: "rgba(255,255,255,0.5)"
-    }]
-  },
+  var myLineChart = new Chart(ctx, {
+      type: 'line',
+    data: {
+      labels: timestamps,
+      datasets: [{
+        label: 'Insulin Dosage',
+        data: doseList,
+        backgroundColor: "rgba(255,255,255,0.5)"
+      }]
+    },
 
-  options:
-    {
-        scales:
-        {
-            xAxes: [{
-                display: false
-            }]
-        }
-    }
-});
+    options:
+      {
+          scales:
+          {
+              xAxes: [{
+                  display: false
+              }]
+          }
+      }
+  });
+}
 
-var ctxM = document.getElementById("dummyChartM").getContext("2d");
+if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf() == new String("dayviewM.html").valueOf()) {
+  var ctxM = document.getElementById("dummyChartM").getContext("2d");
 
-var dummyChartM = new Chart(ctxM, {
-    type: 'line',
-  data: {
-    labels: dummyTimes,
-    datasets: [{
-      label: 'Insulin Dosage',
-      data: dummyMonday,
-      backgroundColor: "rgba(255,255,255,0.5)"
-    }]
-  },
+  var dummyChartM = new Chart(ctxM, {
+      type: 'line',
+    data: {
+      labels: dummyTimes,
+      datasets: [{
+        label: 'Insulin Dosage',
+        data: dummyMonday,
+        backgroundColor: "rgba(255,255,255,0.5)"
+      }]
+    },
 
-  options:
-    {
-        scales:
-        {
-            xAxes: [{
-                display: false
-            }]
-        }
-    }
-});
+    options:
+      {
+          scales:
+          {
+              xAxes: [{
+                  display: false
+              }]
+          }
+      }
+  });
+}
 
-var ctxT = document.getElementById("dummyChartT").getContext("2d");
+if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf() == new String("dayviewT.html").valueOf()) {
+  var ctxT = document.getElementById("dummyChartT").getContext("2d");
 
-var dummyChartT = new Chart(ctxT, {
-    type: 'line',
-  data: {
-    labels: dummyTimes,
-    datasets: [{
-      label: 'Insulin Dosage',
-      data: dummyTuesday,
-      backgroundColor: "rgba(255,255,255,0.5)"
-    }]
-  },
+  var dummyChartT = new Chart(ctxT, {
+      type: 'line',
+    data: {
+      labels: dummyTimes,
+      datasets: [{
+        label: 'Insulin Dosage',
+        data: dummyTuesday,
+        backgroundColor: "rgba(255,255,255,0.5)"
+      }]
+    },
 
-  options:
-    {
-        scales:
-        {
-            xAxes: [{
-                display: false
-            }]
-        }
-    }
-});
+    options:
+      {
+          scales:
+          {
+              xAxes: [{
+                  display: false
+              }]
+          }
+      }
+  });
+}
 
-var ctxW = document.getElementById("dummyChartW").getContext("2d");
+if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf() == new String("dayviewW.html").valueOf()) {
+  var ctxW = document.getElementById("dummyChartW").getContext("2d");
 
-var dummyChartW = new Chart(ctxW, {
-    type: 'line',
-  data: {
-    labels: dummyTimes,
-    datasets: [{
-      label: 'Insulin Dosage',
-      data: dummyWednesday,
-      backgroundColor: "rgba(255,255,255,0.5)"
-    }]
-  },
+  var dummyChartW = new Chart(ctxW, {
+      type: 'line',
+    data: {
+      labels: dummyTimes,
+      datasets: [{
+        label: 'Insulin Dosage',
+        data: dummyWednesday,
+        backgroundColor: "rgba(255,255,255,0.5)"
+      }]
+    },
 
-  options:
-    {
-        scales:
-        {
-            xAxes: [{
-                display: false
-            }]
-        }
-    }
-});
+    options:
+      {
+          scales:
+          {
+              xAxes: [{
+                  display: false
+              }]
+          }
+      }
+  });
+}
