@@ -16,7 +16,7 @@
 <body>
 
 
-    <nav class="teal accent-4" role="navigation">
+    <nav class="indigo" role="navigation">
         <div class="nav-wrapper container">
             <a href="#" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
@@ -67,9 +67,9 @@
 
             <h4>Thursday, April 5th, 2018</h4>
 
-            <ul class="pagination" style="text-align:center">
+            <ul class="pagination " style="text-align:center">
                     <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="dayview.html">1</a></li>
+                    <li class="active indigo lighten-3"><a href="dayview.html">1</a></li>
                     <li class="waves-effect"><a href="dayview2.html">2</a></li>
                     <li class="waves-effect"><a href="dayview2.html"><i class="material-icons">chevron_right</i></a></li>
             </ul>
@@ -78,9 +78,9 @@
 
             <div class="row">
                     <div class="col s12 m5">
-                      <div class="card-panel teal">
+                      <div class="card-panel pink lighten-2">
                         <span class="white-text">
-                            
+                            <canvas id="moodChart"></canvas>
                         </span>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
 
             <div class="row">
                     <div class="col s12 m5">
-                      <div class="card-panel teal">
+                      <div class="card-panel pink lighten-2">
                         <canvas id="insulinChart"></canvas>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
 
     </div>
 
-    <div class="footer">
-        <div class="container white-text center-align">
+    <div class="footer indigo">
+        <div class="container white-text center-align ">
             Copyright @ The Big Three 2018
         </div>
     </div>
@@ -120,6 +120,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src="js/main.js" type='module'></script>
     <script src="js/insulin.js" type="text/javascript"></script>
+    <script src="js/moods.js" type="text/javascript"></script>
 
 </body>
 
