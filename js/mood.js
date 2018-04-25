@@ -1,6 +1,8 @@
 var moods = [];
 var energies = [];
 var timestamps = [];
+var moodList = [];
+var energyList = [];
 
 
 function saveMood(mood) {
@@ -20,9 +22,8 @@ function saveMood(mood) {
 
 function saveEnergy(energy) {
     var today = new Date();
-    console.log("hello");
 
-	let thisEnergy = {date:today, amount:energytype};
+	let thisEnergy = {date:today, amount:energy};
 
 	if (energies != null) {
 		energies.push(thisEnergy);
@@ -37,19 +38,39 @@ function hideDiv(id){
     let d = document.getElementById("moody")
     d.style.visibility = "hidden";
 }
-/*
+
+function loadEnergies() {
+  var loaded = localStorage.getItem("energies");
+
+  if (loaded != null) {
+    energies = JSON.parse(loaded);
+  }
+}
+
+loadEnergies();
+
+for (var energy in energies) {
+  energyList.push(energies[energy].amount);
+  timestamps.push(energies[energy].date);
+}
+
+console.log(energyList);
+console.log(timestamps);
+
+var fileName = location.href.split("/").slice(-1)[0]; 
 
 Chart.defaults.global.legend.display = false;
 
-var ctx = document.getElementById("insulinChart").getContext("2d");
+if (fileName.valueOf() == new String("dayview.html").valueOf()) {
+  var ctx = document.getElementById("energyChart").getContext("2d");
 
-var myLineChart = new Chart(ctx, {
+  var myLineChart = new Chart(ctx, {
     type: 'line',
   data: {
     labels: timestamps,
     datasets: [{
-      label: 'Insulin Mood',
-      data: doseList,
+      label: 'Energy',
+      data: energyList,
       backgroundColor: "rgba(255,255,255,0.5)"
     }]
   },
@@ -64,4 +85,4 @@ var myLineChart = new Chart(ctx, {
         }
     }
 });
-*/
+}

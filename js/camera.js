@@ -20,7 +20,7 @@ camButton.onclick = function() {
 outButton.onclick = function() {
 
     div.className = "center-align scale-transition scale-out";
-    camButton.className = "btn-floating btn-large waves-effect waves-light blue";
+    camButton.className = "btn-floating btn-large waves-effect waves-light pink accent-2";
     outButton.className = "btn-floating disabled";
 
 
