@@ -3,6 +3,7 @@ var div = document.getElementById('foodInfo');
 var hd = document.getElementById('hotdog');
 var outButton = document.getElementById('outButton');
 var submitbutton = document.getElementById('submission');
+var n = 0;
 
 //
 camButton.onclick = function() {
@@ -33,18 +34,17 @@ outButton.onclick = function() {
 submitbutton.onclick = function() {
 
     var item = {}
-    console.log(item);
-	// console.log(document.getElementById("servingsize").value);
-    
-    var curmeal = localStorage.getItem("curMeal");
-    if (curmeal == null) {
-        curmeal = [];
-    }
+    var curmeal = JSON.parse(localStorage.getItem("curMeal"));
+    var num = n.toString();
+    console.log(num);
 	item.name = "Hot Dog";
-	item.servingType = 1;
+	item.servingType = "serving";
 	item.servingSize = 1;
-	item.carbCount = 10;
+    item.carbCount = 10;
+    item.id = "hotdog".concat(num);
+    n++;
 	curmeal.push(item);
 	localStorage.setItem("curMeal", JSON.stringify(curmeal));
-    console.log(curmeal);
+
 }
+

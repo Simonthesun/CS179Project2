@@ -44,6 +44,14 @@ function addMeal()
 	localStorage.setItem('curMeal', "");
 }
 
+function removeItem(id)
+{
+	var curmeal = JSON.parse(localStorage.curMeal);
+	curmeal = curmeal.filter(item => item.id = id);
+	console.log(curmeal);
+	localStorage.setItem('curMeal', curmeal);
+}
+
 // calculate the total carbs for a list of foods
 
 function calcCarbs(meal) 
@@ -74,6 +82,7 @@ function renderItem(item)
 	<th>${item.name}</th>
 	<th>${item.servingSize} ${item.servingType}</th>
 	<th>${item.carbCount}</th>
+	<th><button onclick="location.href='meal.html'; removeItem(${item.id})">Delete Item</button></th>
 	</tr>`
     
 }
@@ -81,14 +90,17 @@ function renderItem(item)
 function initialize() {
 
     // (adapted from handout in coding lab)
-    let initState = localStorage.getItem('meals');
+	let initState = localStorage.getItem('meals');
     console.log(initState);
     if (initState != null)
     {
         meals = JSON.parse(initState);
-    }
-	let curmeal = JSON.parse(localStorage.getItem("curMeal"));
-    renderMeal(curmeal);
+	}
+	else {
+		meals = [];
+	}
+	let currentmeal = JSON.parse(localStorage.getItem("curMeal"));
+    renderMeal(currentmeal);
 }
 
 initialize();

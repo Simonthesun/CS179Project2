@@ -11,6 +11,9 @@ function addItem() {
 	item.servingType = document.getElementById("servingtype").value;
 	item.servingSize = document.getElementById("servingsize").value;
 	item.carbCount = 10;
+	item.id = n.toString();
+	n++;
+	console.log(n);
 	curmeal.push(item);
 	console.log("item is:", item);
 	console.log("meal is:", curmeal);
