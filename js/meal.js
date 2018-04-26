@@ -82,7 +82,6 @@ function renderItem(item)
 	<th>${item.name}</th>
 	<th>${item.servingSize} ${item.servingType}</th>
 	<th>${item.carbCount}</th>
-	<th><button onclick="location.href='meal.html'; removeItem(${item.id})">Delete Item</button></th>
 	</tr>`
     
 }
