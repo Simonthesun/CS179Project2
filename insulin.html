@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>MEalTIME</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <nav class="indigo" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">MEalTIME</a>
+            <ul class="right hide-on-med-and-down black-text">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="dayview.html">Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html">Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="mood.html">Log Mood</a>
+                </li>
+                <li>
+                    <a href="exercise.html">Log Exercise</a>
+                </li>
+            </ul>
+            <!-- This slide menu will only appear on a mobile screen -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Mobile Collapse: http://next.materializecss.com/navbar.html -->
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <a href="index.html"><i class="large material-icons">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="dayview.html"><i class="large material-icons">trending_up</i>Day View</a>
+                </li>
+                <li>
+                    <a href="meal.html"><i class="large material-icons">local_dining</i>Plan a Meal</a>
+                </li>
+                <li>
+                    <a href="mood.html"><i class="large material-icons">mood</i>Log Mood</a>
+                </li>
+                <li>
+                    <a href="exercise.html"><i class="large material-icons">favorite</i>Log Exercise</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="prototype" class="section">
+        <div class="container"></div>
+                <div id="insulin">
+                    <h5 class="header light">Insulin</h5>
+                    <div class="input-field inline">
+                        <input placeholder="0" id="dosage" type="text" class="validate">
+                        Units
+                    </div>
+
+                    <button class="waves-effect waves-light btn pink accent-2" onclick="location.href='index.html'; saveDosage()">Enter Insulin Dose</button>
+                </div>
+        </div>
+    </div>
+    
+    <div class="footer indigo">
+        <div class="container white-text center-align">
+            Copyright @ The Big Three 2018
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="js/main.js" type='module'></script>
+    <script src="js/insulin.js" type="text/javascript"></script>
+
+</body>
+
+</html>
