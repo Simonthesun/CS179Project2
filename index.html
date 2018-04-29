@@ -65,13 +65,13 @@
     <div id="prototype" class="section" style="height: 40%">
         <div class="container">
             <h4 class="header light" style="text-align: center">Welcome Back!</h4>
-            <p class="light flow-text">
-                Here's how you're doing:
+            <p class="light text center">
+                Swipe through the carousel or choose a date below:
             </p>
             
-            <div>
+            <!-- <div>
                 <input type="text" placeholder= "today" class="datepicker">
-            </div>
+            </div> -->
 
             <div class="carousel carousel-slider center">
 
@@ -96,6 +96,22 @@
                     <a href="dayviewM.html" class="btn waves-effect white black-text darken-text-4"><i class="material-icons right">chevron_right</i>Learn More</a>
                 </div>
             </div>
+
+            <p></p>
+
+            <div class="row">
+                <div class = "input-field col s8 center">
+                    <input type="text" placeholder= "choose a date" class="datepicker">
+                </div>
+                <div class="input-field col s4 center">
+                    <!-- <button class="btn waves effect waves-light pink accent-2" type="submit" name="action">Go!</button>
+
+                    <a href="meal.html" class="waves-effect waves-light btn pink accent-2">Add Meal</a> -->
+                    <a onclick="M.toast({html: 'This feature is currently disabled. Please try the carousel instead!'})" class="btn pink accent-2">Go</a>
+                </div>
+                
+            </div>
+
         </div>
     </div>
 
@@ -104,7 +120,7 @@
 
             <div class="col s6">
                 <!-- <a href="meal.html" id="foodbtn"class="btn-floating btn-large waves-effect waves-light pink accent-2 tooltipped"data-position="bottom" data-tooltip="Meals"><i class="large material-icons">local_dining</i></a> -->
-                <a href="meal.html" id="foodbtn"class="btn-floating btn-large waves-effect waves-light pink accent-2"><i class="large material-icons">local_dining</i></a>
+                <a href="meal.html" id="foodbtn" class="btn-floating btn-large waves-effect waves-light pink accent-2"><i class="large material-icons">local_dining</i></a>
                 <br><label for="foodbtn">Meals</label>
             </div>
 
