@@ -17,7 +17,7 @@
 
     <nav class="indigo" role="navigation">
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">MEalTIME</a>
+            <a href="index.html" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
                 <li>
                     <a href="index.html">Home</a>
@@ -62,15 +62,17 @@
     </nav>
 
     <div id="prototype" class="section">
-        <div class="container"></div>
+        <div class="container">
                 <div id="insulin">
-                    <h5 class="header light">Insulin</h5>
+                    <h5 class="header light">Enter your Insulin dose:</h5>
                     <div class="input-field inline">
                         <input placeholder="0" id="dosage" type="text" class="validate">
                         Units
                     </div>
 
-                    <button class="waves-effect waves-light btn pink accent-2" onclick="location.href='index.html'; saveDosage()">Enter Insulin Dose</button>
+                    <br>
+                    <a href="index.html" class="waves-effect waves-light btn red accent-4">Not Now</a>
+                    <button class="waves-effect waves-light btn pink accent-2" onclick="location.href='index.html'; saveDosage()">Add</button>
                 </div>
         </div>
     </div>

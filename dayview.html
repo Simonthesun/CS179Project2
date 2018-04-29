@@ -15,10 +15,9 @@
 
 <body>
 
-
     <nav class="indigo" role="navigation">
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">MEalTIME</a>
+            <a href="index.html" class="brand-logo">MEalTIME</a>
             <ul class="right hide-on-med-and-down black-text">
                 <li>
                     <a href="index.html">Home</a>
@@ -64,45 +63,60 @@
 
     <div id="prototype" class="section">
         <div class="container">
+            
+            <ul class="pagination" style="text-align:center">
+                    <li class="waves-effect"><a href="dayviewW.html"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="dayviewM.html">4/2</a></li>
+                    <li class="waves-effect"><a href="dayviewT.html">4/3</a></li>
+                    <li class="waves-effect"><a href="dayviewW.html">4/4</a></li>
+                    <li class="active indigo lighten-3"><a href="">4/5</a></li>
+                    <li class="disabled"><a href=""><i class="material-icons">chevron_right</i></a></li>
+            </ul>
 
             <h4>Thursday, April 5th, 2018</h4>
 
-            <h5 class="header bold">Glucose and Energy</h5>
-
             <div class="row">
                     <div class="col s12 m5">
-                      <div class="card-panel blue-grey darken-1">
-                        <canvas id="energyChart"></canvas>
+                      <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Glucose and Energy:</span>
+                                <canvas id="energyChart"></canvas>
+                            </div>
+                            <div class="card-action" style="text-align:center">
+                                    <a class="waves-effect waves-light btn modal-trigger pink accent-2" href="#modal1"><i class="material-icons">assessment</i></a>
+                                    <div id="modal1" class="modal">
+                                            <div class="modal-content">
+                                                <h4>Try this:</h4>
+                                                <p>Your glucose levels look a little higher than normal today. Try eating lower carb foods at your next meal. Keep an eye on levels until they go back to normal</p>
+                                            </div>
+                                        <div class="modal-footer">
+                                            <a href="" class="modal-action modal-close waves-effect waves-green btn-flat center">Got it</a>
+                                        </div>
+                                    </div>
+                            </div>
                     </div>
                 </div>
             </div>
-        
-            <p class="light flow-text" style="text-align:left">
-                    Your glucose levels look a little higher than normal today. Try eating lower carb foods at your next meal. Keep an eye on levels until they go back to normal
-            </p>
-
-            <h5 class="header bold">Insulin History</h5>
 
             <div class="row">
-                    <div class="col s12 m5">
-                      <div class="card-panel blue-grey darken-1">
-                        <canvas id="insulinChart"></canvas>
+                <div class="col s12 m5">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Insulin history:</span>
+                            <p>A summary of your insulin doses over the last week</p>
+                            <canvas id="insulinChart"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="light flow-text" style="text-align:left">
-                    A summary of your insulin doses over the last week.
-            </p>
-
-            <br>
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card blue-grey darken-1">
-
+                        
                         <div class="card-content white-text">
                             <span class="card-title">Today you ate: </span>
-                            <table id="mealtable">
+                            <table id="mealtable" class="highlight">
                                     <thead>
                                       <tr>
                                           <th>Food</th>

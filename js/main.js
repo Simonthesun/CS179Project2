@@ -25,3 +25,12 @@ var elem = document.querySelector('.tabs');
 // });
 
 var instance = M.Tabs.init(elem);
+
+
+
+var elem_t = document.querySelector('.tooltipped');
+var instance_t = M.Tooltip.init(elem_t);
+
+
+var elem_mod = document.querySelector('.modal');
+var instance_mod = M.Modal.init(elem_mod);
