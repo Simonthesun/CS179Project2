@@ -66,44 +66,60 @@
         <div class="container" align="center">
             <h4 class="header light center-align">How are you feeling?</h4>
             <div class "container" align="center" id="moody">
-            <p class="light flow-text center-align">
-                Mood:
+            <br>
+            <p class="light center-align">
+                Choose a circle that reflects your mood
             </p>
             <!-- implement this as a form -->
+            
+            <br>
+            <br>
+                <div class="row">
+                    <div class="col s4">
 
-            <table>
-                <tr>
-                    <td>
-                        <a id="sadbtn" class="btn-floating btn-large waves-effect waves-light" onclick="saveMood(-1); location.href='index.html'">
-                                <i class="large material-icons" style="font-size:40px; color:red; background-color:white">
-                                    sentiment_dissatisfied
-                                </i>
+                        <a id="sadbtn" class="waves-effect waves-light btn-floating btn-large pink" onclick="M.toast(
+                            {html: 'You entered sad :( . Redirecting to Dayview...',
+                                completeCallback: function(){
+                                    saveMood(-1)
+                                }
+                        })">
+                            <i class="large material-icons" style="font-size:40px; color:red; background-color:white">
+                                sentiment_dissatisfied
+                            </i>
                         </a>
                         
-    
-                    </td>
-                    <td>
-                        <a id="mehbtn" class="btn-floating btn-large waves-effect waves-light" onclick="saveMood(0); location.href='index.html'">
+                    </div>
+                    <div class="col s4">
+
+                        <a id="mehbtn" class="waves-effect waves-light btn-floating btn-large" onclick="M.toast(
+                            {html: 'You entered meh :| . Redirecting to Dayview...',
+                                completeCallback: function(){
+                                    saveMood(0)
+                                }
+                        })">
                             <i class="large material-icons" style="font-size:40px; color:gold; background-color:white">
                                 sentiment_neutral
                             </i>
                         </a>
-                    </td>
-                    <td>
-                            <a id="happybtn" class="btn-floating btn-large waves-effect waves-light" onclick="saveMood(1); location.href='index.html'">
-                                    <i class="large material-icons" style="font-size:40px; color:green; background-color:white">
-                                        sentiment_satisfied
-                                    </i>
-                                </a>
-                    </td>
+
+                    </div>
+                    <div class="col s4">
+
+                        <a id="happybtn" class="waves-effect waves-light btn-floating btn-large" onclick="M.toast(
+                            {html: 'You entered happy :) ! Redirecting to Dayview...',
+                                completeCallback: function(){
+                                    saveMood(1)
+                                }
+                        })">
+                            <i class="large material-icons" style="font-size:40px; color:green; background-color:white">
+                                sentiment_satisfied
+                            </i>
+                        </a>
+
+                    </div>
                     
-                </tr>
-                
-            </table>
-            
-            </div>
-            <div class "container" align="center" id="energy"></div>
-            
+                </div>
+            </div>            
         </div>
     </div>
     
