@@ -3,6 +3,10 @@ var energies = [];
 var timestamps = [];
 var moodList = [];
 var energyList = [];
+var dummyMonday = [0, 1, 0, 0, 0];
+var dummyTuesday = [1, -1, 1, -1, 1];
+var dummyWednesday = [0, 1, 1, 1, -1];
+var dummyTimes = [1, 2, 3, 4, 5];
 
 
 function saveMood(mood) {
@@ -71,6 +75,84 @@ if (fileName.valueOf() == new String("dayview.html").valueOf()) {
     datasets: [{
       label: 'Energy',
       data: energyList,
+      backgroundColor: "rgba(255,255,255,0.5)"
+    }]
+  },
+
+  options:
+    {
+        scales:
+        {
+            xAxes: [{
+                display: false
+            }]
+        }
+    }
+});
+}
+
+if (fileName.valueOf() == new String("dayviewW.html").valueOf()) {
+  var ctx = document.getElementById("energyChart").getContext("2d");
+
+  var myLineChart = new Chart(ctx, {
+    type: 'line',
+  data: {
+    labels: dummyTimes,
+    datasets: [{
+      label: 'Energy',
+      data: dummyWednesday,
+      backgroundColor: "rgba(255,255,255,0.5)"
+    }]
+  },
+
+  options:
+    {
+        scales:
+        {
+            xAxes: [{
+                display: false
+            }]
+        }
+    }
+});
+}
+
+if (fileName.valueOf() == new String("dayviewT.html").valueOf()) {
+  var ctx = document.getElementById("energyChart").getContext("2d");
+
+  var myLineChart = new Chart(ctx, {
+    type: 'line',
+  data: {
+    labels: dummyTimes,
+    datasets: [{
+      label: 'Energy',
+      data: dummyTuesday,
+      backgroundColor: "rgba(255,255,255,0.5)"
+    }]
+  },
+
+  options:
+    {
+        scales:
+        {
+            xAxes: [{
+                display: false
+            }]
+        }
+    }
+});
+}
+
+if (fileName.valueOf() == new String("dayviewM.html").valueOf()) {
+  var ctx = document.getElementById("energyChart").getContext("2d");
+
+  var myLineChart = new Chart(ctx, {
+    type: 'line',
+  data: {
+    labels: dummyTimes,
+    datasets: [{
+      label: 'Energy',
+      data: dummyMonday,
       backgroundColor: "rgba(255,255,255,0.5)"
     }]
   },
