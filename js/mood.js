@@ -1,6 +1,7 @@
 var moods = [];
 var energies = [];
 var timestamps = [];
+var timestampsm = [];
 var moodList = [];
 var energyList = [];
 var dummyMonday = [0, 1, 0, 0, 0];
@@ -72,11 +73,12 @@ loadMoods();
 
 for (var mood in moods) {
   moodList.push(moods[mood].amount);
-  timestamps.push(moods[mood].date);
+  timestampsm.push(moods[mood].date);
 }
 
 console.log(energyList);
-console.log(timestamps);
+console.log(moodList);
+console.log(timestampsm);
 
 var fileName = location.href.split("/").slice(-1)[0]; 
 
@@ -88,7 +90,7 @@ if (fileName.valueOf() == new String("dayview.html").valueOf()) {
   var myLineChart = new Chart(ctx, {
     type: 'line',
   data: {
-    labels: timestamps,
+    labels: timestampsm,
     datasets: [{
       label: 'Mood',
       data: moodList,
