@@ -28,6 +28,8 @@ function saveExercise() {
 	end.setTime(time.getTime() + (duration * 60000));
 
 	storeExercise(activity, time, intensity, end);
+
+	window.location.href='dayview.html';
 }
 
 function loadExercises() {

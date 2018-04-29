@@ -9,7 +9,10 @@ var dummyTimes = [1, 2, 3, 4, 5];
 function saveDosage() {
 	var dosage = parseInt(document.getElementById("dosage").value);
 
-	storeDosage(dosage);
+  storeDosage(dosage);
+  
+  window.location.href='dayview.html';
+
 }
 
 function storeDosage(dosage) {

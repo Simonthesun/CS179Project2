@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Add all the items in a list of items to a 'meal' object in local storage
 function addMeal()
 {
+	
 	let newMeal = {};
 	var foods = JSON.parse(localStorage.curMeal);
 	console.log(foods);
@@ -35,13 +36,15 @@ function addMeal()
     n++;
     newMeal.category = document.getElementById("mealtype");
     newMeal.food = foods;
-    newMeal.carbs = calcCarbs(foods);
+	newMeal.carbs = calcCarbs(foods);
+	window.location.href='insulin.html';
     
     meals.push(newMeal);
     // console.log(stickys);
     localStorage.setItem('meals', JSON.stringify(meals));
 	// render(stickys);
 	localStorage.setItem('curMeal', "");
+	
 }
 
 function removeItem(id)
