@@ -70,7 +70,7 @@ function calcCarbs(meal)
 
 function renderMeal(meal)
 {
-    // get the stickys element
+    // get the meal element
    let mealsElm = document.querySelector(".meals");
    console.log(mealsElm);
    // render the meal from a list of foods

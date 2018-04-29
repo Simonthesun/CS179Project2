@@ -28,7 +28,6 @@ function saveExercise() {
 	end.setTime(time.getTime() + (duration * 60000));
 
 	storeExercise(activity, time, intensity, end);
-
 	window.location.href='dayview.html';
 }
 
@@ -41,17 +40,39 @@ function loadExercises() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadExercises();
 
-    var fileName = location.href.split("/").slice(-1)[0]; 
-    if (fileName.valueOf() == new String("dayview2.html").valueOf()) {
-    	var list = document.getElementById("exerciseList");
-
-    	for (var key in exercises) {
-    		var entry = document.createElement('li');
-			entry.appendChild(document.createTextNode(exercises[key].name + " (" + exercises[key].intensity + ")"));
-			list.appendChild(entry);
-    	}
-    }
+    let initState = localStorage.getItem('exercises');
+    if (initState != null)
+    {
+        exercises = JSON.parse(initState);
+	}
+	else {
+		exercises = [];
+	}
+	let curex = JSON.parse(localStorage.getItem("exercises"));
+    renderExercise(curex);
 
 }, false);
+
+
+// display a table of items in the meal
+
+function renderExercise(ex)
+{
+    // get the exercise element
+   let list = document.querySelector(".exerciseList");
+   // render the meal from a list of foods
+   list.innerHTML = ex.map(p => renderItem(p)).join('');
+}
+
+// Adds the HTML for a single item to the table for a given meal
+function renderItem(item)
+{
+    return `<tr>
+	<th>${item.activity}</th>
+	<th>${item.time}</th>
+	<th>${item.intensity}</th>
+	<th>${item.duration}</th>
+	</tr>`
+    
+}
