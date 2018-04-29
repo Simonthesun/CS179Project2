@@ -8,6 +8,10 @@ function initializeMeal()
 		var meal = [];
 		localStorage.setItem("curMeal", JSON.stringify(meal));
 	}
+	else{
+		console.log("hello");
+		console.log(localStorage.getItem("curMeal"));
+	}
 
 }
 
@@ -47,12 +51,14 @@ function addMeal()
 	
 }
 
-function removeItem(id)
+function removeFood(id)
 {
 	var curmeal = JSON.parse(localStorage.curMeal);
-	curmeal = curmeal.filter(item => item.id = id);
+
+	curmeal = curmeal.filter(item => item.id != id);
+	console.log("filtered meal:")
 	console.log(curmeal);
-	localStorage.setItem('curMeal', curmeal);
+	localStorage.setItem('curMeal', JSON.stringify(curmeal));
 }
 
 // calculate the total carbs for a list of foods
@@ -72,7 +78,6 @@ function renderMeal(meal)
 {
     // get the meal element
    let mealsElm = document.querySelector(".meals");
-   console.log(mealsElm);
    // render the meal from a list of foods
    mealsElm.innerHTML = meal.map(p => renderItem(p)).join('');
 
@@ -85,14 +90,20 @@ function renderItem(item)
 	<th>${item.name}</th>
 	<th>${item.servingSize} ${item.servingType}</th>
 	<th>${item.carbCount}</th>
+	<th><a class="btn-floating btn waves-effect waves-light pink accent-2" onclick="M.toast(
+		{html: 'Removed Item! Reloading...',
+			completeCallback: function(){
+				removeFood(${item.id});
+				window.location.reload()}})">X</a></th>
 	</tr>`
     
 }
 
-function initialize() {
 
-    // (adapted from handout in coding lab)
-	let initState = localStorage.getItem('meals');
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let initState = localStorage.getItem('meals');
     console.log(initState);
     if (initState != null)
     {
@@ -101,8 +112,9 @@ function initialize() {
 	else {
 		meals = [];
 	}
-	let currentmeal = JSON.parse(localStorage.getItem("curMeal"));
+	initializeMeal();
+	let currentmeal = JSON.parse(localStorage.curMeal);
+	console.log(currentmeal);
     renderMeal(currentmeal);
-}
 
-initialize();
+}, false);

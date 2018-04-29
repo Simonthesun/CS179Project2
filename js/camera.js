@@ -32,17 +32,14 @@ outButton.onclick = function() {
 };
 
 submitbutton.onclick = function() {
-
+    var num = Math.floor(Math.random() * 10000);
     var item = {}
     var curmeal = JSON.parse(localStorage.getItem("curMeal"));
-    var num = n.toString();
-    console.log(num);
 	item.name = "Hot Dog";
 	item.servingType = "serving";
 	item.servingSize = 1;
     item.carbCount = 10;
-    item.id = "hotdog".concat(num);
-    n++;
+    item.id = num;
 	curmeal.push(item);
 	localStorage.setItem("curMeal", JSON.stringify(curmeal));
 
