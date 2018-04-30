@@ -104,7 +104,19 @@ if (fileName.valueOf() == new String("dayview.html").valueOf()) {
         {
             xAxes: [{
                 display: false
-            }]
+            }],
+
+            yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Mood",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
+              }]
         }
     }
 });
@@ -130,7 +142,19 @@ if (fileName.valueOf() == new String("dayviewW.html").valueOf()) {
         {
             xAxes: [{
                 display: false
-            }]
+            }],
+
+            yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Mood",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
+              }]
         }
     }
 });
@@ -156,7 +180,19 @@ if (fileName.valueOf() == new String("dayviewT.html").valueOf()) {
         {
             xAxes: [{
                 display: false
-            }]
+            }],
+
+            yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Mood",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
+              }]
         }
     }
 });
@@ -182,7 +218,19 @@ if (fileName.valueOf() == new String("dayviewM.html").valueOf()) {
         {
             xAxes: [{
                 display: false
-            }]
+            }],
+
+            yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Mood",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
+              }]
         }
     }
 });

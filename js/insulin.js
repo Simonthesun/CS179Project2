@@ -68,6 +68,18 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
           {
               xAxes: [{
                   display: false
+              }],
+
+              yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Insulin",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
               }]
           }
       }
@@ -94,6 +106,18 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
           {
               xAxes: [{
                   display: false
+              }],
+
+              yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Insulin",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
               }]
           }
       }
@@ -120,6 +144,18 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
           {
               xAxes: [{
                   display: false
+              }],
+
+              yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Insulin",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
               }]
           }
       }
@@ -146,6 +182,18 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
           {
               xAxes: [{
                   display: false
+              }],
+
+              yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Insulin",
+                    fontColor: "#FFFFFF"
+                  },
+
+                  ticks: {
+                    fontColor: "FFFFFF"
+                  }
               }]
           }
       }
