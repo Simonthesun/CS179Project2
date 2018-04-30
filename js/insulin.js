@@ -73,7 +73,7 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
               yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Insulin",
+                    labelString: "Insulin Levels",
                     fontColor: "#FFFFFF"
                   },
 
@@ -111,7 +111,7 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
               yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Insulin",
+                    labelString: "Insulin Levels",
                     fontColor: "#FFFFFF"
                   },
 
@@ -149,7 +149,7 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
               yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Insulin",
+                    labelString: "Insulin Levels",
                     fontColor: "#FFFFFF"
                   },
 
@@ -187,7 +187,7 @@ if (fileName.valueOf() == new String("index.html").valueOf() || fileName.valueOf
               yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Insulin",
+                    labelString: "Insulin Levels",
                     fontColor: "#FFFFFF"
                   },
 

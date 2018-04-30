@@ -109,7 +109,7 @@ if (fileName.valueOf() == new String("dayview.html").valueOf()) {
             yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Mood",
+                    labelString: "Mood/Glucose",
                     fontColor: "#FFFFFF"
                   },
 
@@ -147,7 +147,7 @@ if (fileName.valueOf() == new String("dayviewW.html").valueOf()) {
             yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Mood",
+                    labelString: "Mood/Glucose",
                     fontColor: "#FFFFFF"
                   },
 
@@ -185,7 +185,7 @@ if (fileName.valueOf() == new String("dayviewT.html").valueOf()) {
             yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Mood",
+                    labelString: "Mood/Glucose",
                     fontColor: "#FFFFFF"
                   },
 
@@ -223,7 +223,7 @@ if (fileName.valueOf() == new String("dayviewM.html").valueOf()) {
             yAxes: [{
                   scaleLabel: {
                     display: true,
-                    labelString: "Mood",
+                    labelString: "Mood/Glucose",
                     fontColor: "#FFFFFF"
                   },
 
