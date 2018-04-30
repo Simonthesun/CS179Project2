@@ -1,9 +1,9 @@
 var exercises = [];
 
-function storeExercise(exName, exTime, exIntensity, exEnd) {
+function storeExercise(exName, exTime, exIntensity, exEnd, dur) {
 	var today = new Date();
-
-	let thisExercise = {date:today, time:exTime, name:exName, intensity:exIntensity, end:exEnd};
+	console.log(exName);
+	let thisExercise = {date:today, time:exTime, name:exName, intensity:exIntensity, end:exEnd, duration:dur};
 
 	if (exercises != null) {
 		exercises.push(thisExercise);
@@ -27,7 +27,7 @@ function saveExercise() {
 	var end = new Date(time.getTime());
 	end.setTime(time.getTime() + (duration * 60000));
 
-	storeExercise(activity, time, intensity, end);
+	storeExercise(activity, time, intensity, end, duration);
 	window.location.href='dayview.html';
 }
 
@@ -69,8 +69,7 @@ function renderExercise(ex)
 function renderItem(item)
 {
     return `<tr>
-	<th>${item.activity}</th>
-	<th>${item.time}</th>
+	<th>${item.name}</th>
 	<th>${item.intensity}</th>
 	<th>${item.duration}</th>
 	</tr>`
